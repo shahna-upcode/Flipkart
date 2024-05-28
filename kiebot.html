@@ -1,0 +1,1802 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            box-sizing: border-box;
+            font-family: 'Roboto',sans-serif;
+
+        }
+
+        header {
+            display: flex;
+            justify-content: space-around;
+            background-color: darkblue;
+            height: 100px;
+             width: 100%; 
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 99;
+
+        }
+
+        .image-container {
+            width: 50px;
+            
+
+        }
+
+        .menu {
+            width: 980px;
+
+        }
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+
+        }
+
+        ul li {
+            list-style: none;
+            font-size: 14px;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: white;
+            font-family: Arial;
+            font-weight: bold;
+
+        }
+
+        ul li a:hover{
+            text-decoration: none;
+            color: rgb(119, 119, 197);
+            font-family: Arial;
+            font-weight: bold;
+
+        }
+
+
+        .btn {
+            background-color: darkblue;
+            color: white;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: rgb(54, 75, 194);
+            opacity: 0.5;
+            z-index: 1;
+
+        }
+
+        .image {
+            width: 100%;
+            height: 400px;
+            background-position: center;
+            position: relative;
+            z-index: 0;
+        }
+
+        .text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            color: white;
+            z-index: 2;
+            top: 10px;
+            text-align:center;
+        
+
+        }
+
+        .technologiesContainer {
+            display: flex;
+            height: 300px;
+            width: 100%;
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .tehnologies {
+            display: flex;
+            flex-direction: column;
+
+            text-align: center;
+        }
+
+        .tehnologiesSpan {
+            font-size: x-large;
+            font-weight: 600;
+        }
+
+        .downloadApp {
+            width: 98%;
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+
+        .frontedDevelopment {
+            font-size: x-large;
+            font-weight: 600px;
+            margin-left: 120px;
+            text-align: left;
+
+        }
+
+        
+        .container {
+            background-color: darkblue;
+            margin-top: 100px;
+             
+            
+        }
+        footer{
+            display: flex;
+            width: 100%;
+            background-color:#000;
+            height: 490px;
+        }
+        .footer1{
+            flex: 2;
+            border: 1px solid rgba(19, 13, 1, 0);
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            background: #000000e3;
+            
+        }
+       
+        .f1-1{
+            width: 363px;
+            height: 236px;
+            background-color: #00245d6d;
+            margin-top: 65px;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+
+        }
+        .socialmedia-icons{
+            width: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            height: 50px;
+        }
+        .fa {
+            padding: 7px;
+        font-size: 19px;
+        width: 22px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+        border-radius: 50%;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-linkedin {
+  background: #00245dcf;
+  color: rgba(255, 255, 255, 0.711);
+}
+.fa-instagram {
+  background: #00245dcf;
+  color: rgba(255, 255, 255, 0.711);
+}
+.fa-youtube {
+  background: #00245dcf;
+  color: rgba(255, 255, 255, 0.711);
+}
+.fa-twitter {
+  background: #00245dcf;
+  color: rgba(255, 255, 255, 0.711);
+}
+.fa-facebook {
+  background: #00245dcf;
+  color: rgba(255, 255, 255, 0.711);
+}
+.footer2{
+ flex: 4;
+  border: 1px solid#00000006 ; 
+ background: #000000e3;
+ display: flex;
+ flex-direction: column;
+
+        }
+.f2-1{
+  flex: 6;
+   border: 1px solid #00000003; 
+  display: flex;
+}
+.f-2-1-1{
+     border: 1px solid #00000000;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.f-2-1-1-a{
+    color: white;
+    text-decoration: none;
+}
+.f-2-1-2{
+    border: 1px solid #00000000;
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+
+}
+.f-2-1-2-1{
+     border: 1px solid #00000000; 
+    flex: 1;
+
+}
+.f-2-1-2-2{
+    border: 1px solid #00000000; 
+    flex: 2;
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 1%;
+
+}
+.footer-box{
+    height: max-content;
+    width: max-content;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 30px;
+     border: 1px solid #00000000; 
+    border-radius: 20px;
+    background-color: #2026326e;
+
+}
+.f2-2{
+flex: 2;
+ border: 1px solid #20263200; 
+
+
+}
+.f-2-2-1{
+    justify-content: flex-start;
+    text-align: left;
+    color: #ffffff;
+    display: flex;
+}
+.f-2-2-2{
+justify-content: center;
+color: #ffffff;
+text-align: right;
+
+}
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="image-container">
+            <img src="image/white-logo.png" alt="" width="200" />
+        </div>
+
+        <div class="menu">
+            <ul>
+                <li><a href="#">services</a></li>
+                <li><a href="#">industeis</a></li>
+                <li><a href="#">protfolio</a></li>
+                <li><a href="#">insights</a></li>
+                <li><a href="#">careers</a></li>
+
+
+                <li><a href="#">company</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </div>
+
+    </header>
+    <main>
+        <div style="background-color: darkblue;">
+            <div style="
+        background-color: darkblue;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        margin-left: 80px;
+        margin-right: 40px;
+         ">
+                <div class="btn" style="font-size: xx-large; margin-left: 60px;">Our Serives</div>
+                <p style="color: #ffffff; margin-left: 80px;">
+                    at kiebot,we are dedicated to delivering excellence in a wide range
+                    of service to meet your unique needs. explor our <br />
+                    comprehencive offerings and discover kiebot's approch which set us
+                    apart in the context of each services
+                </p>
+            </div>
+        </div>
+        <div style="">
+            <div style="display: flex;">
+                <div style="display: flex; width: 50%;">
+                    <div class="">
+                        <div style="margin-top: 60px; margin-left: 60PX;">
+                            <img src="image/service-new-1-01-768x1194.jpg" alt="" width="200px" ; />
+                        </div>
+                    </div>
+
+                    <div class="">
+                        <div style="margin-top: 60px; margin-left: 20px;">
+                            <h1>dedicated development team</h1>
+                            <p>
+                            <h3>leverage our versatile 360 engineers-both <br>
+                                developers and QA specislist-to build a dedicated <br>team tailord to your project. our
+                                team <br>
+                                offers expertise in various technologies, ensuring <br>top-quality solution</h3>
+                            </p>
+                            <h3> <button class="btn">kiebot's Approch:</button> we custimize teams to meet <br>
+                                your specefic project requirments,providing a flexible <br>on-demand,and scalable
+                                solution</h3>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div style=" width: 50%; display: flex; margin-top: 30PX;">
+                    <div class="">
+
+                        <img src="image/service-new-2-01-768x1194.jpg" alt="" width="200px">
+
+                    </div>
+                    <div style=" margin-left: 20px;">
+                        <h1>custom software development</h1>
+                        <p>
+                        <h3> our exprienced team excels in creating customs <br>
+                            software solution that align with your vision and <br>
+                            business goals. we follow industry best practices, <br>
+                            ensuring efficent,high-quality </h3>
+                        </p>
+                        <button class="btn">kiebot's Approch</button>
+                        <h3>we ambrace agile <br>
+                            methologies and cutting-edge technology <br>stack to deliver innovative solution</h3>
+                    </div>
+                </div>
+            </div>
+            <div style="display: flex;">
+                <div style="display: flex;">
+                    <div class="">
+                        <div style="margin-top: 60px;margin-left: 60px;">
+                            <img src="image/product-dev-01-768x1194.jpg" alt="" width="200px" ; />
+
+                        </div>
+                    </div>
+                    <div class="">
+                        <div style="margin-top: 60px; margin-left: 20px;">
+                            <h1>product development</h1>
+                            <p>
+                            <h3>let us turn your idea into reality with your <br> product
+                                development <br>expertice. we guide you throught <br>
+                                every stage. from concept to luanch ensuring <br>
+                                succesful product </h3>
+                            </p>
+                            <h3><button class="btn">kiebot's Approch </button>our leadership team brings <br>
+                                deep industry knowlege to drive your product <br>sucess</h3>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="">
+                    <div style="margin-top: 60px; margin-left: 110px;  ">
+                        <img src="image/mobile-apps-01-768x1194.jpg" alt="" width="200px">
+                    </div>
+                </div>
+
+                <div class="">
+                    <div style="margin-top: 60px;  margin-left: 20px;">
+                        <h1>Mobile Apps</h1>
+                        <p>
+                        <h3>create exceptional mobile apps with keibot.we're <br>
+                            proficient in developing android, iOS, reat <br>
+                            Native, and flutter applications, offering an <br>
+                            enganging users experince.</h3>
+                        </p>
+                        <h3><button class="btn">kiebot's Approch:</button>Our commitment to <br>
+                            innovation ensures your apps stand out in a <br>
+                            crowded market</h3>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div style="display: flex;">
+                <div style="display: flex;">
+                    <div class="">
+                        <div style="margin-top: 60px;margin-left: 60px;">
+                            <img src="image/web-dev-01-768x1194.jpg" alt="" width="200px">
+                        </div>
+                    </div>
+                    <div class="">
+                        <div style="margin-top: 60px;  margin-left: 20px;">
+                            <h1>Web Development</h1>
+                            <P>
+                            <h3>Achieve a strong online presence with our web <br>
+                                development services. We use technologies like <br>
+                                React and Next.js to build responsive, dynamic <br>
+                                websites</h3>
+                            </P>
+                            <h3><button class="btn">Kiebot's Approch:</button>Our team values continuous <br>
+                                learning and personal growth to stay at the <br>
+                                forefront of web development trends.</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="">
+                    <div style="margin-top: 60px; margin-left: 100px;">
+                        <img src="image/product-mvp-01-768x1194.jpg" alt="" width="200px">
+                    </div>
+                </div>
+                <div class="">
+                    <div style="margin-top: 60px;  margin-left: 20px;">
+                        <h1>product MVP</h1>
+                        <p>
+                        <h3>launch your minimum viable product (MVP) with</br>
+                            kiebot's support. We'll help you test your concept <br>
+                            and get to market quickly</h3>
+                        </p>
+                        <h3><button class="btn">Kiebot's Approch:</button>Our transparent <br>
+                            communications and rapid development ansure <br>
+                            your MVP is a sucess.</h3>
+                    </div>
+                </div>
+            </div>
+
+
+            <div style="display: flex;">
+                <div style="display: flex;">
+                    <div class="">
+                        <div style="margin-top: 60px;margin-left: 60px;">
+                            <img src="image/QA-01-768x1194.jpg" alt="" width="200px">
+                        </div>
+                    </div>
+
+                    <div class="">
+                        <div style="margin-top: 60px; margin-left: 20px;">
+                            <h1>software testing & QA</h1>
+                            <P>
+                            <h3>kiebot offers comprehensive software testing and <br>
+                                quality assurance services to ensure bug-free,top- <br>quality software.</h3>
+                            </P>
+                            <h3><button class="btn">Kiebot's Approch:</button>Our 360 QA Engineers are <br>
+                                equipped with project management expertise and <br>
+                                guided by experts to enchance efficiency</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="">
+                    <div style="margin-top: 60px; margin-left: 80px;">
+                        <img src="image/uiux-01-768x1194.jpg" alt="" width="200px">
+                    </div>
+                </div>
+                <div class="">
+                    <div style="margin-top: 60px ; margin-left: 20px;">
+                        <h1>UI/UX</h1>
+                        <P>
+                        <h3>Our design team specializes in creating intitive, <br>
+                            user-friendly interfaces and experiences, <br>
+                            echancing your product's appeals and usability.</h3>
+                        </P>
+                        <h3><button class="btn">Kiebot's Approach:</button>We focus on innovative UI/UX <br>
+                            design, making your software not only functional <br>
+                            but also delightfulto use.</h3>
+                    </div>
+                </div>
+            </div>
+
+    </main>
+    <main>
+
+
+        <div style="background-color: aqua;position: relative;overflow: hidden; height: 500px; margin-top: 50px;">
+            <div
+                style="background-image: url('./image/istockphoto-1443245439-612x612.jpg'); position: absolute; top: 0; left: 0;right: 0;bottom: 0; background-repeat: no-repeat; background-size: cover;">
+            </div>
+
+            <div class="overlay"></div>
+
+            <div class="text">
+
+                <div style="font-size: xx-large; ">
+                    <h1><b>Case Studies</b></h1>
+                </div>
+                <p>Explore Our sucess Stories: Real-world solution, exceptional Results.
+                    Discover how Kiebot transformed challenges into triumphs for our clients <br>
+                    withn a showcase for our finset work </p>
+            </div>
+        </div>
+
+
+
+
+        <div style="display: flex;">
+            <div style="display: flex;">
+                <div style="display: flex;">
+                    <div class="">
+                        <div style="margin-top: -180px; margin-left: 100px;  position: relative; z-index: 10; ">
+                            <img src="image/zag-03.png" alt="" width="85%">
+
+                            <div style="background-color: white;">
+                                <div style="background-color: white;
+            margin-left: 100px;
+            margin-right: 111px;
+            width: 230px;
+            margin-top: -70px;
+            position: relative;">
+                                    <div style="margin-left: 10px; margin-right: 10px;">
+                                        <div class="tittle " style="font-size:xx-large;">zag network</div>
+                                        <p>the patnership betwwen kiebot
+                                            and zag <br> network stand as a testament
+                                            to the <br>power of collabaration in achieving <br>
+                                            remarkable technologies advancement</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="">
+                        <div style="margin-top: -180px; margin-left: 50px; position: relative; z-index: 10;">
+                            <img src="image/workomo-03.png" alt="" width="85%">
+
+                            <div style="background-color: white;">
+                                <div style="background-color: white;
+                    margin-left: 100px;
+                    margin-right: 111px;
+                    width: 230px;
+                    margin-top: -70px;
+                    position: relative;">
+                                    <div style="margin-left: 10px; margin-right: 10px;">
+                                        <div class="tittle" style="font-size: xx-large;">workomo </div>
+                                        <p>kiebot initisted a strategiec apporch for <br>
+                                            succesful product develoyment.our developers thoroughly understood the <br>
+                                            product, design flows, and delivered the <br>
+                                            end product</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="">
+                        <div style="margin-top: -180px; margin-left: 10px; position: relative; z-index: 10;">
+                            <img src="image/bren-03.png" alt="" width="85%">
+
+                            <div style="background-color: white;">
+                                <div style="background-color: white;
+                        margin-left: 100px;
+                        margin-right: 111px;
+                        width: 230px;
+                        margin-top: -70px;
+                        position: relative;">
+                                    <div style="margin-left: 10px; margin-right: 10px;">
+                                        <div class="tittle" style="font-size: xx-large;">bren</div>
+                                        <p>In the case of bren, ensuring top-quality for <br>
+                                            layman end users was critical.Our <br>
+                                            dedicated agile QA engineers excelled in <br>
+                                            meeting this challenge</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+    </main>
+    <div class="technologiesContainer">
+        <div class="tehnologies">
+            <span class="tehnologiesSpan">Technologies</span>
+            <span>Our experienced team excels in a wide array of cutting-edge technologies, ensuring we</span>
+            <span>deliver top-notch solutions tailored to your needs.</span>
+
+        </div>
+    </div>
+    <h2 style="text-align: left; margin-left: 120px;">Mobile App Development</h2>
+
+    <main>
+
+        <div class="downloadApp" style="display: flex;">
+            <div style="display: flex,">
+                <div style="display: flex;">
+                    <div
+                        style="margin-left: 120px; margin-top: 6px; width: 350px;box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;">
+                        <div style="display: flex;">
+                            <div style="background-color:white;">
+                                <div style="display: flex;">
+                                    <img src="image/android.svg" alt="" width="100px">
+                                    <div>
+                                        <div style="margin-top:6px ; margin-left: 10px;">
+                                            <h2>Android</h2>
+                                            <p>A Widely-used mobile operating <br>
+                                                system developed by Google.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div
+                style="margin-left: 120px; margin-top: 6px; width: 350px;box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; ">
+                <div style="background-color:white;">
+                    <div style="background-color:white;">
+                        <div style="display: flex;">
+                            <img src="image/apple-ios.svg" alt="" width="100px">
+                            <div class="">
+                                <div style="margin-top: 6px; margin-left: 10px;">
+                                    <h2>IOS</h2>
+                                    <p>Apple's mobile operating system, <br>
+                                        known for its high performance and <br>
+                                        user-friendly interface.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="display: flex;">
+                <div
+                    style="margin-left: 120px; margin-top: 6px; width: 350px;box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;">
+                    <div style="background-color:white;">
+                        <div style="background-color: white;">
+                            <div style="display: flex;">
+                                <img src="image/react-native.svg" alt="" width="100px">
+                                <div class="">
+                                    <div style="margin-top: 6px; margin-left: 10px;">
+                                        <h2>Reat Native</h2>
+                                        <p>A framework for building mobile apps <br>
+                                            using Reat and native components.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <div style="display: flex;">
+                    <div style="display: flex;">
+                        <div
+                            style="margin-left: 120px; margin-top: 6px; width: 350px;box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;">
+                            <div style="background-color:white;">
+                                <div style="background-color:white;">
+                                    <div style="display: flex;">
+                                        <img src="image/flutter.svg" alt="" width="100px">
+                                        <div class="">
+                                            <div style="margin-top: 6px; margin-left: 10px;">
+                                                <h2>Flutter</h2>
+                                                <p>An open-source UI software <br>
+                                                    development toolkit from Google for <br>
+                                                    building natively compiled applications <br>
+                                                    for mobile,web,and desktop.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="downloadApp" style="display: flex;">
+                <div style="display: flex,">
+                    <div>
+                        <h2><span class="frontedDevelopment">Frontend Development</span></h2>
+                    </div>
+                    <div style="display: flex;">
+                        <div
+                            style="margin-left: 120px; margin-top: 6px; width: 350px;box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;">
+                            <div style="display: flex;">
+                                <div style="background-color:white;">
+                                    <div style="display: flex;">
+                                        <img src="image/react.svg" alt="" width="100px">
+                                        <div>
+                                            <div style="margin-top:6px ; margin-left: 10px;">
+                                                <h2>React</h2>
+                                                <p>A popular JavaScript library for <br>
+                                                    building user interfaces, <br>
+                                                    maintained by Facebook.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    style="margin-left: 120px; margin-top: 70px; width: 350px;box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; ">
+                    <div style="background-color:white;">
+                        <div style="background-color:white;">
+                            <div style="display: flex;">
+                                <img src="image/nextjs.svg" alt="" width="100px">
+                                <div class="">
+                                    <div style="margin-top: 6px; margin-left: 10px;">
+                                        <h2>Next.js</h2>
+                                        <p>React-based web framework that <br>
+                                            enables functionality such as server- <br>side rendering and generating
+                                            static <br>
+                                            websites.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            
+                
+
+                <div class="downloadApp" style="display: flex;">
+                    
+                    <h2 style="text-align: left; margin-left: 120px;">Backend Development</h2>
+                    <div style="display: flex;">
+                        <div style="display: flex;">
+                            <div class="downloadApp" style="display: flex;">
+                                <div style="display: flex,">
+                                    <div style="display: flex;">
+                                        <div style="display: flex;">
+                                        
+                                            <div
+                                                style="margin-left: 120px;  margin-top: 10px; width: 350px;box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;">
+                                                <div style="background-color: white;">
+                                                    <div style="background-color: white;">
+                                                        <div style="display: flex;">
+                                                            <img src="image/nodejs.svg" alt="" width="100px">
+                                                            <div>
+                                                                <div style="margin-top: 6px; margin-left: 10px;">
+                                                                    <h2>Node.js</h2>
+                                                                    <p>An open-source, versatile JavaScript <br>
+                                                                        runtime for building server-side and <br>
+                                                                        networking applications.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                
+                                <div>
+                                    <div style="display: flex;">
+                                        <div style="display: flex;">
+                                            <div
+                                                style="margin-left: 120px; margin-top: 6px; width: 350px;box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;">
+                                                <div style="background-color:white;">
+                                                    <div style="background-color:white;">
+                                                        <div style="display: flex;">
+                                                            <img src="image/nestjs.svg" alt="" width="100px">
+                                                            <div class="">
+                                                                <div style="margin-top: 6px; margin-left: 10px;">
+                                                                    <h2>NestJS</h2>
+                                                                    <p>A progressive Node.js framework for <br>
+                                                                        efficient and reliable server-side <br>
+                                                                        applications.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="display: flex;">
+                                    <div style="display: flex;">
+                                        <div
+                                            style="margin-left: 120px; margin-top: 6px; width: 350px;box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;">
+                                            <div style="background-color: white;">
+                                                <div style="background-color:white;">
+                                                    <div style="display: flex;">
+                                                        <img src="image/python.svg " alt="" width="100px">
+                                                        <div class="">
+                                                            <div style="margin-top: 6px; margin-left: 10px;">
+                                                                <h2>Python</h2>
+                                                                <p>A powerful, versatile programming <br>
+                                                                    language widely used for various <br>
+                                                                    applications.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- ///// -->
+                                <div style="display: flex;">
+                                    <div style="display: flex;">
+                                        <div
+                                            style="margin-left: 120px; margin-top: 30px; width: 350px;box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;">
+                                            <div style="background-color: white;">
+                                                <div style="background-color: white;">
+                                                    <div style="display: flex;">
+                                                        <img src="image/java.svg" alt="" width="100px">
+                                                        <div class="">
+                                                            <div style="margin-top: 6px; margin-left: 10px;">
+                                                                <h2>Java</h2>
+                                                                <p>A widely-used, robust, object-oriented <br>
+                                                                    programming language for enterprise- <br>
+                                                                    level applications.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- ////// -->
+                                <!-- ///// -->
+                                <div style="display: flex;">
+                                    <div
+                                        style="margin-left: 120px; margin-top: 30px; width: 350px;box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;">
+                                        <div style="background-color:white;">
+                                            <div style="background-color:white;">
+                                                <div style="display: flex;">
+                                                    <img src="image/laravel.svg" alt="" width="100px">
+                                                    <div class="">
+                                                        <div style="margin-top: 6px; margin-left: 10px;">
+                                                            <h2>Laravel</h2>
+                                                            <p>A PHP framework known for its <br>
+                                                                elegant syntax and tools for tasks <br>
+                                                                such as routing, authentication, and <br>
+                                                                caching.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ////// -->
+                            <!-- ///// -->
+
+                        </div>
+                    </div>
+
+
+
+                    <div class="downloadApp" style="display: flex;">
+                        <div style="display: flex,">
+                            <div>
+                                <h2><span class="frontedDevelopment">Database Expertise</span></h2>
+                            </div>
+                            <div style="display: flex;">
+                                <div
+                                    style="margin-left: 120px; margin-top: 6px; width: 350px;box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;">
+                                    <div style="display: flex;">
+                                        <div style="background-color:white;">
+                                            <div style="display: flex;">
+                                                <img src="image/postgresql.svg" alt="" width="100px">
+                                                <div>
+                                                    <div style="margin-top:6px ; margin-left: 10px;">
+                                                        <h2>PostgreSQL</h2>
+                                                        <p>A powerful, open-source, object- <br>
+                                                            relational database system known <br>
+                                                            for reliability and performance.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            style="margin-left: 120px; margin-top: 70px; width: 350px;box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; ">
+                            <div style="background-color:white;">
+                                <div style="background-color:white;">
+                                    <div style="display: flex;">
+                                        <img src="image/17459301571551942128.svg" alt="" width="100px">
+                                        <div class="">
+                                            <div style="margin-top: 6px; margin-left: 10px;">
+                                                <h2>MongoDB</h2>
+                                                <p>A popular, cross-platform, document- <br>
+                                                    oriented database program, using <br>
+                                                    JSON-like documents.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                        <div>
+                            <h2 style="text-align: left; margin-left: 120px;">DevOps</h2>
+                            <div class="downloadApp" style="display: flex;">
+                                <div style="display: flex,">
+                                    <div style="display: flex;">
+                                        <div
+                                            style="margin-left: 120px; margin-top: 6px; width: 350px;box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;">
+                                            <div style="display: flex;">
+                                                <div style="background-color:white;">
+                                                    <div style="display: flex;">
+                                                        <img src="image/aws.svg" alt="" width="100px">
+                                                        <div>
+                                                            <div style="margin-top:6px ; margin-left: 10px;">
+                                                                <h2>aws</h2>
+                                                                <p>Amazon Web Services offers a <br>
+                                                                    comprehensive suite of cloud <br> services for
+                                                                    scalable computing,<br>
+                                                                    storage, and more.</p>
+
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div style="margin-left: 120px; margin-top: 6px; width: 350px;
+                                    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; ">
+                                    <div style="background-color:white;">
+                                        <div style="background-color:white;">
+                                            <div style="display: flex;">
+                                                <img src="image/google-cloud.png" alt="" width="60px" height="70px">
+                                                <div class="">
+                                                    <div style="margin-top: 6px; margin-left: 10px;">
+                                                        <h2>GoogleCloud</h2>
+                                                        <p>Google Cloud provides a range of <br>
+                                                            cloud computing services, including <br>
+                                                            infrastructure, machine learning, and <br>
+                                                            analytics.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="display: flex;">
+                                    <div style="margin-left: 120px; margin-top: 6px; width: 350px;
+                                        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;">
+                                        <div style="background-color:white;">
+                                            <div style="background-color: white;">
+                                                <div style="display: flex;">
+                                                    <img src="image/docker.svg" alt="" width="100px">
+                                                    <div class="">
+                                                        <div style="margin-top: 6px; margin-left: 10px;">
+                                                            <h2>Docker</h2>
+                                                            <p>Docker is a platform for developing, <br>
+                                                                shipping, and running applications in <br>
+                                                                isolated containers.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+                                <div class="downloadApp" style="display: flex;">
+                                    <div style="display: flex,">
+                                        <div style="display: flex;">
+                                            <div style="margin-left: 120px; margin-top: 30px; width: 350px;
+                                                box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;">
+                                                <div style="display: flex;">
+                                                    <div style="background-color:white;">
+                                                        <div style="display: flex;">
+                                                            <img src="image/Microsoft_Azure-Logo.wine_-2048x1365.png"
+                                                                alt="" width="80px" height="80px">
+                                                            <div>
+                                                                <div style="margin-top:6px ; margin-left: 10px;">
+                                                                    <h2> Microsoft Azure</h2>
+                                                                    <p>Azure is Microsoft's cloud platform <br>
+                                                                        supporting diverse services fo <br>
+                                                                        r application development and <br>
+                                                                        deployment.</p>
+
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div style="margin-left: 120px; margin-top: 30px; width: 350px;
+                                        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; ">
+                                        <div style="background-color:white;">
+                                            <div style="background-color:white;">
+                                                <div style="display: flex;">
+                                                    <img src="image/kubernetes.svg" alt="" width="60px" height="70px">
+                                                    <div class="">
+                                                        <div style="margin-top: 6px; margin-left: 10px;">
+                                                            <h2>Kubernates</h2>
+                                                            <p>Kubernetes is an open-source <br>
+                                                                container orchestration platform for <br>
+                                                                automating deployment and scaling <br>
+                                                                of containerized applications.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div style="display: flex;">
+                                        <div style="margin-left: 120px; margin-top: 30px; width: 350px;
+                                            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;">
+                                            <div style="background-color:white;">
+                                                <div style="background-color: white;">
+                                                    <div style="display: flex;">
+                                                        <img src="image/gitlab-ci-cd.png" alt="" width="100px">
+                                                        <div class="">
+                                                            <div style="margin-top: 6px; margin-left: 10px;">
+                                                                <h2>Gitlab CI/CD Pipeline</h2>
+                                                                <p>GitLab CI/CD automates building, <br>
+                                                                    testing, and deployment processes <br>
+                                                                    integrated directly into GitLab <br>
+                                                                    repositories.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="downloadApp" style="display: flex;">
+                                        <div style="display: flex,">
+                                            <div style="display: flex;">
+                                                <div style="margin-left: 120px; margin-top: 30px; width: 350px;
+                                                    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;">
+                                                    <div style="display: flex;">
+                                                        <div style="background-color:white;">
+                                                            <div style="display: flex;">
+                                                                <img src="image/github-action.png" alt="" width="60px"
+                                                                    height="50px">
+                                                                <div>
+                                                                    <div style="margin-top:6px ; margin-left: 10px;">
+                                                                        <h2> Github Action</h2>
+                                                                        <p>GitHub Actions is an automation <br>
+                                                                            platform within GitHub for defining <br>
+                                                                            workflows to build, test, and deploy <br>
+                                                                          code.</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div
+                                            style="margin-left: 120px; margin-top: 30px; width: 350px;box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; ">
+                                            <div style="background-color:white;">
+                                                <div style="background-color:white;">
+                                                    <div style="display: flex;">
+                                                        <img src="image/terraform.png " alt="" width="60px"
+                                                            height="80px">
+                                                        <div class="">
+                                                            <div style="margin-top: 6px; margin-left: 10px;">
+                                                                <h2>Terraform</h2>
+                                                                <p>Terraform is an open-source <br>
+                                                                    Infrastructure as Code (IaC) tool for <br>
+                                                                    declaratively provisioning and <br>
+                                                                    managing infrastructure across <br>
+                                                                    various platforms.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+ <div class="container">
+<h2 style="text-align:center;color: white;">Our client</h2>
+<div class="box2">
+<div style="background-color: whitesmoke;
+            width: 1319px;
+            height: 1300px;
+            margin-top: 100px;
+              margin-left: 100px; 
+            margin-right: 100px;
+            margin-bottom: 100px;
+            border-radius: 10px;">
+
+          <h2 style="text-align: left; margin-left: 50px;">startups</h2>
+
+         
+          
+
+
+
+          <div style="display: flex;">
+            <div style="display: flex;">
+            <div style="margin-left: 40px;
+            width: 110px;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+             border-radius: 10PX;
+             background-color: white; height: 100px;">
+             <div style="display: flex;">
+            <img src="image/workomo-1.png" alt="" width="100px" height="30px" style="margin-top: 30px;margin-left: 10px;">
+
+            </div>
+            </div>
+          </div>
+        
+
+
+
+
+
+
+        <div style="display: flex;"> 
+            <div style="display: flex;">
+            <div style="margin-left: 40px;
+            width: 130px;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+             border-radius: 10PX;
+             background-color: white; height: 100px;">
+             <div style="display: flex;">
+                
+            <img src="image/logo-36-01.jpg" alt="" width="100px" height="50px" style="margin-top: 30px;margin-left: 20px;">
+
+            </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div style="display: flex;"> 
+            <div style="display: flex;">
+            <div style="margin-left: 40px;
+            width: 130px;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+             border-radius: 10PX;
+             background-color: white; height: 100px;">
+             <div style="display: flex;">
+                
+            <img src="image/zag.png" alt="" width="100px" height="50px" style="margin-top: 25px;margin-left: 20px;">
+
+            </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div style="display: flex;"> 
+            <div style="display: flex;">
+            <div style="margin-left: 40px;
+            width: 130px;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+             border-radius: 10PX;
+             background-color: white; height: 100px;">
+             <div style="display: flex;">
+                
+            <img src="image/gyanoholic-1.png" alt="" width="100px" height="50px" style="margin-top: 25px;margin-left: 20px;">
+
+            </div>
+            </div>
+          </div>
+        </div>    
+        
+        <div style="display: flex;"> 
+            <div style="display: flex;">
+            <div style="margin-left: 40px;
+            width: 130px;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+             border-radius: 10PX;
+             background-color: white; height: 100px;">
+             <div style="display: flex;">
+                
+            <img src="image/edtube.png" alt="" width="100px" height="50px" style="margin-top: 25px;margin-left: 20px;">
+
+            </div>
+            </div>
+          </div>
+        </div>
+
+        
+
+
+        <div style="display: flex;"> 
+            <div style="display: flex;">
+            <div style="margin-left: 40px;
+            width: 130px;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+             border-radius: 10PX;
+             background-color: white; height: 100px;">
+             <div style="display: flex;">
+                
+            <img src="image/bunnyzon-1.png" alt="" width="100px" height="50px" style="margin-top: 25px;margin-left: 20px;">
+
+            </div>
+            </div>
+          </div>
+        </div>    
+
+
+
+        <div style="display: flex;"> 
+            <div style="display: flex;">
+            <div style="margin-left: 40px;
+            width: 130px;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+             border-radius: 10PX;
+             background-color: white; height: 100px;">
+             <div style="display: flex;">
+                
+            <img src="image/adidhi-1.png" alt="" width="100px" height="50px" style="margin-top: 25px;margin-left: 20px;">
+
+            </div>
+            </div>
+          </div>
+        </div>
+        </div>
+
+        
+        
+         <div style="display: flex;"> 
+            <div style="display: flex;">
+            <div style="margin-left: 40px;
+            width: 130px;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+             border-radius: 10PX;
+             background-color: white; height: 100px;
+             margin-top:20px ;">
+             <div style="display: flex;">
+                
+            <img src="image/h-com.png" alt="" width="100px" height="30px" style="margin-top: 35px;margin-left: 20px;">
+
+            </div>
+            </div>
+          </div>
+        
+
+         <div style="display: flex;"> 
+            <div style="display: flex;">
+            <div style="margin-left: 40px;
+            width: 130px;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+             border-radius: 10PX;
+             background-color: white; height: 100px;
+             margin-top: 20px;">
+             <div style="display: flex;">
+            
+                
+            <img src="image/glowing.png" alt="" width="100px" height="30px" style="margin-top: 35px;margin-left: 20px;">
+
+            </div>
+            </div>
+          </div>
+        </div> 
+        
+
+
+
+        <div style="display: flex;"> 
+            <div style="display: flex;">
+            <div style="margin-left: 40px;
+            width: 130px;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+             border-radius: 10PX;
+             background-color: white; height: 100px;
+             margin-top: 20px;">
+             <div style="display: flex;">
+            
+                
+            <img src="image/peditoH.png" alt="" width="100px" height="20px" style="margin-top: 35px;margin-left: 20px;">
+
+            </div>
+            </div>
+          </div>
+        </div> 
+        
+</div>
+
+
+<h2 style="text-align: left; margin-left: 30px;">Tech Companies</h2>
+
+
+<div style="display: flex;"> 
+    <div style="display: flex;">
+    <div style="margin-left: 40px;
+    width: 130px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+     border-radius: 10PX;
+     background-color: white; height: 100px;
+     margin-top: 20px;">
+     <div style="display: flex;">
+    
+        
+    <img src="image/glowing.png" alt="" width="100px" height="30px" style="margin-top: 35px;margin-left: 20px;">
+
+    </div>
+    </div>
+  </div>
+
+
+
+
+<div style="display: flex;"> 
+    <div style="display: flex;">
+    <div style="margin-left: 40px;
+    width: 130px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+     border-radius: 10PX;
+     background-color: white; height: 100px;
+     margin-top: 20px;">
+     <div style="display: flex;">
+    
+        
+    <img src="image/neointraction.png" alt="" width="100px" height="30px" style="margin-top: 35px;margin-left: 20px;">
+
+    </div>
+    </div>
+  </div>
+</div> 
+
+
+
+<div style="display: flex;"> 
+    <div style="display: flex;">
+    <div style="margin-left: 40px;
+    width: 130px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+     border-radius: 10PX;
+     background-color: white; height: 100px;
+     margin-top: 20px;">
+     <div style="display: flex;">
+    
+        
+    <img src="image/ults.png" alt="" width="100px" height="30px" style="margin-top: 35px;margin-left: 20px;">
+
+    </div>
+    </div>
+  </div>
+</div> 
+
+
+
+<div style="display: flex;"> 
+    <div style="display: flex;">
+    <div style="margin-left: 40px;
+    width: 130px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+     border-radius: 10PX;
+     background-color: white; height: 100px;
+     margin-top: 20px;">
+     <div style="display: flex;">
+    
+        
+    <img src="image/logo34-01.png" alt="" width="100px" height="50px" style="margin-top: 25px;margin-left: 20px;">
+
+    </div>
+    </div>
+  </div>
+</div> 
+</div>
+
+
+<h2 style="text-align: left; margin-left: 30px;">Small Scale Businesses</h2>
+
+<div style="display: flex;"> 
+    <div style="display: flex;">
+    <div style="margin-left: 40px;
+    width: 130px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+     border-radius: 10PX;
+     background-color: white; height: 100px;
+     margin-top: 20px;">
+     <div style="display: flex;">
+    
+        
+    <img src="image/mByom.png" alt="" width="100px" height="30px" style="margin-top: 25px;margin-left: 20px;">
+
+    </div>
+    </div>
+  </div>
+
+
+
+<div style="display: flex;"> 
+    <div style="display: flex;">
+    <div style="margin-left: 40px;
+    width: 130px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+     border-radius: 10PX;
+     background-color: white; height: 100px;
+     margin-top: 20px;">
+     <div style="display: flex;">
+    
+        
+    <img src="image/golf.png" alt="" width="100px" height="30px" style="margin-top: 25px;margin-left: 20px;">
+
+    </div>
+    </div>
+  </div>
+</div> 
+
+
+
+<div style="display: flex;"> 
+    <div style="display: flex;">
+    <div style="margin-left: 40px;
+    width: 130px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+     border-radius: 10PX;
+     background-color: white; height: 100px;
+     margin-top: 20px;">
+     <div style="display: flex;">
+    
+        
+    <img src="image/homebazaar.png" alt="" width="100px" height="50px" style="margin-top: 25px;margin-left: 20px;">
+
+    </div>
+    </div>
+  </div>
+</div> 
+
+
+<div style="display: flex;"> 
+    <div style="display: flex;">
+    <div style="margin-left: 40px;
+    width: 130px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+     border-radius: 10PX;
+     background-color: white; height: 100px;
+     margin-top: 20px;">
+     <div style="display: flex;">
+    
+        
+    <img src="image/SIT.png" alt="" width="100px" height="30px" style="margin-top: 35px;margin-left: 20px;">
+
+    </div>
+    </div>
+  </div>
+</div> 
+
+
+<div style="display: flex;"> 
+    <div style="display: flex;">
+    <div style="margin-left: 40px;
+    width: 130px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+     border-radius: 10PX;
+     background-color: white; height: 100px;
+     margin-top: 20px;">
+     <div style="display: flex;">
+    
+        
+    <img src="image/Sportto.png" alt="" width="100px" height="30px" style="margin-top: 35px;margin-left: 20px;">
+
+    </div>
+    </div>
+  </div>
+</div> 
+</div>
+
+    <h2 style="text-align: left; margin-left: 30px;">MNCs</h2>
+
+    
+    <div style="display: flex;"> 
+        <div style="display: flex;">
+        <div style="margin-left: 40px;
+        width: 130px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+         border-radius: 10PX;
+         background-color: white; height: 100px;
+         margin-top: 20px;">
+         <div style="display: flex;">
+        
+            
+        <img src="image/thoughtworks.png" alt="" width="100px" height="30px" style="margin-top: 35px;margin-left: 20px;">
+    
+        </div>
+        </div>
+      </div>
+    
+    
+
+
+    <div style="display: flex;"> 
+        <div style="display: flex;">
+        <div style="margin-left: 40px;
+        width: 130px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+         border-radius: 10PX;
+         background-color: white; height: 100px;
+         margin-top: 20px;">
+         <div style="display: flex;">
+        
+            
+        <img src="image/ayata.jpg" alt="" width="100px" height="30px" style="margin-top: 35px;margin-left: 20px;">
+    
+        </div>
+        </div>
+      </div>
+    </div> 
+    </div>
+
+
+    <h2 style="text-align: left; margin-left: 30px;">Enterprises</h2>
+
+
+    <div style="display: flex;"> 
+        <div style="display: flex;">
+        <div style="margin-left: 40px;
+        width: 130px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+         border-radius: 10PX;
+         background-color: white; height: 100px;
+         margin-top: 20px;">
+         <div style="display: flex;">
+        
+            
+        <img src="image/bren-1.jpg" alt="" width="100px" height="30px" style="margin-top: 35px;margin-left: 20px;">
+    
+        </div>
+        </div>
+      </div>
+    
+    
+
+    <div style="display: flex;"> 
+        <div style="display: flex;">
+        <div style="margin-left: 40px;
+        width: 130px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+         border-radius: 10PX;
+         background-color: white; height: 100px;
+         margin-top: 20px;">
+         <div style="display: flex;">
+        
+            
+        <img src="image/MBME-1.jpg" alt="" width="100px" height="30px" style="margin-top: 35px;margin-left: 20px;">
+    
+        </div>
+        </div>
+      </div>
+    </div> 
+    
+
+    <div style="display: flex;"> 
+        <div style="display: flex;">
+        <div style="margin-left: 40px;
+        width: 130px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+         border-radius: 10PX;
+         background-color: white; height: 100px;
+         margin-top: 20px;">
+         <div style="display: flex;">
+        
+            
+        <img src="image/sulekha-1.jpg" alt="" width="100px" height="30px" style="margin-top: 35px;margin-left: 20px;">
+    
+        </div>
+        </div>
+      </div>
+    </div> 
+    
+
+    <div style="display: flex;"> 
+        <div style="display: flex;">
+        <div style="margin-left: 40px;
+        width: 130px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+         border-radius: 10PX;
+         background-color: white; height: 100px;
+         margin-top: 20px;">
+         <div style="display: flex;">
+        
+            
+        <img src="image/sulfex.png" alt="" width="100px" height="30px" style="margin-top: 35px;margin-left: 20px;">
+    
+        </div>
+        </div>
+      </div>
+    </div> 
+    
+
+    <div style="display: flex;"> 
+        <div style="display: flex;">
+        <div style="margin-left: 40px;
+        width: 130px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+         border-radius: 10PX;
+         background-color: white; height: 100px;
+         margin-top: 20px;">
+         <div style="display: flex;">
+        
+            
+        <img src="image/SIT.png" alt="" width="100px" height="30px" style="margin-top: 35px;margin-left: 20px;">
+    
+        </div>
+        </div>
+      </div>
+    </div> 
+    </div>
+
+
+
+<h2 style="text-align: left; margin-left: 30px;">Nonprofits</h2>
+
+<div style="display: flex;"> 
+    <div style="display: flex;">
+    <div style="margin-left: 40px;
+    width: 130px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+     border-radius: 10PX;
+     background-color: white; height: 100px;
+     margin-top: 20px;">
+     <div style="display: flex;">
+    
+        
+    <img src="image/logo35-01.jpg" alt="" width="100px" height="30px" style="margin-top: 35px;margin-left: 20px;">
+
+    </div>
+    </div>
+  </div>
+
+
+
+
+<div style="display: flex;"> 
+    <div style="display: flex;">
+    <div style="margin-left: 40px;
+    width: 130px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+     border-radius: 10PX;
+     background-color: white; height: 100px;
+     margin-top: 20px;">
+     <div style="display: flex;">
+    
+        
+    <img src="image/hayathy.png" alt="" width="100px" height="30px" style="margin-top: 35px;margin-left: 20px;">
+
+    </div>
+    </div>
+  </div>
+</div> 
+</div>
+
+
+
+       </div>
+      
+</div>
+
+        
+        
+
+
+
+
+
+    </main>
+    <footer style="background-image: url(./image/istockphoto-1443245439-612x612.jpg);background-repeat: no-repeat; background-size: 100%;">
+        <div class="footer1">
+            <div class="f1-1">
+            <img src="./image/white-logo.png" style="width: 242px;">
+            <div class="socialmedia-icons">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="https://www.youtube.com/watch?v=2VDdP7lYiiI&list=RDVsL0PlxxYD8&index=15" class="fa fa-youtube"></a>
+            </div>
+            </div>
+        </div>
+        <div class="footer2">
+            <div class="f2-1">
+                <div class="f-2-1-1">
+                    <h3 style="color: #ffffff;">Quick Links</h3>
+                    <div>
+                <p><a class="f-2-1-1-a" href="">About Us</a></p>
+                <p><a class="f-2-1-1-a" href="">Contact Us</a></p>
+                <p><a class="f-2-1-1-a" href="">Blogs</a></p>
+                <p><a class="f-2-1-1-a" href="">Privacy Policy</a></p>
+                <p><a class="f-2-1-1-a" href="">FAQ</a></p>
+            </div>
+
+            </ul>
+                </div>
+                <div class="f-2-1-2">
+                    <div class="f-2-1-2-1" style="color: #ffffff;">
+                        <h3>Location Address</h3>
+                        <p>Know where to find us? Let's take a look and get in touch !</p>
+                    </div>
+                    <div class="f-2-1-2-2">
+                        <div class="footer-box" style="color: #ffffff;">
+                            <h3>Bangalore, India</h3>
+                            <p>91springboard, 45/3,</p>
+                            <p>Residency Road, Mahatma</p>
+                            <p>Gandhi Rd, Bengaluru</p>
+                            <p>-560025, Karnataka, India</p>
+                        </div>
+                        <div class="footer-box" style="color: #ffffff;">
+                            <h3> Kannur, India</h3>
+                            <p>MiZone IT Park, near Kannur</p>
+                            <p>University Campus, Kannur</p>
+                            <p>-670562, Kerala,India</p>
+                            <p>-560025, Karnataka, India</p>
+                        </div>
+                        <div class="footer-box" style="color: #ffffff;">
+                            <h3>Malappuram, India</h3>
+                            <p>Upcode Software Labs</p>
+                            <p>Kuttaloor, Safeway Arcade</p>
+                            <p>near Al Ihsan English</p>
+                            <p>School, Vengara -676304,</p>
+                            
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="f2-2">
+                <div class="f-2-2-1">
+                    <p>Copyright © 2023 <strong>Kiebot</strong>. All rights reserved.</p>
+                </div>
+                <div class="f-2-2-2">
+                    <p>Privacy Policy |Terms & Condition</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
